@@ -1,10 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse, HttpResponseNotAllowed
+from django.views.decorators.csrf import csrf_exempt
+
 from .models import Product
 import json
 
 
 # Create your views here.
+@csrf_exempt
 def product_list(request):
     """Lista todos los productos (GET) y crea un nuevo producto (POST)."""
     if request.method == 'GET':
@@ -30,6 +33,7 @@ def product_list(request):
         return HttpResponseNotAllowed(['GET', 'POST'])
 
 
+@csrf_exempt
 def product_detail(request, product_id):
     product = get_object_or_404(Product, id=product_id)
 
