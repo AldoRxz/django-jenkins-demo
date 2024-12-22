@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'django_settings.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
+        'NAME': 'django_jenkins',
         'USER': 'root',
         'HOST': '127.0.0.1',
         'PASSWORD': 'root',
