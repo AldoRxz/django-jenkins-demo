@@ -8,3 +8,7 @@ __pycache__/
 
 
 *.sqlite3
+
+jenkins_home
+
+.idea
