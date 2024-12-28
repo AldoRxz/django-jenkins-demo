@@ -16,3 +16,4 @@ class SimpleTestCase(TestCase):
 
     def test_false_is_false(self):
         self.assertFalse(False)
+
