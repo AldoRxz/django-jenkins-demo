@@ -98,7 +98,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_jenkins',
-        'USER': 'root',
+        'USER': 'django_user',
         'HOST': 'localhost',
         'PASSWORD': 'root',
         'PORT': '3306',
