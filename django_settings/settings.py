@@ -82,18 +82,29 @@ WSGI_APPLICATION = 'django_settings.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'django_jenkins',
+#         'USER': 'root',
+#         'HOST': '127.0.0.1',
+#         'PASSWORD': 'root',
+#         'PORT': '3306',
+#         'OPTIONS': {'charset': 'utf8mb4'},
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_jenkins',
         'USER': 'root',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PASSWORD': 'root',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
