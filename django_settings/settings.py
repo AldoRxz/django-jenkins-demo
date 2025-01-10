@@ -108,15 +108,30 @@ WSGI_APPLICATION = 'django_settings.wsgi.application'
 #    }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.getenv('DATABASE_NAME', 'django_jenkins'),
+#         'USER': os.getenv('DATABASE_USER', 'django_user'),
+#         'PASSWORD': os.getenv('DATABASE_PASSWORD', 'root'),
+#         'HOST': os.getenv('DATABASE_HOST', 'localhost'),
+#         'PORT': os.getenv('DATABASE_PORT', '3306'),
+#         'OPTIONS': {'charset': 'utf8mb4'},
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DATABASE_NAME', 'django_jenkins'),
-        'USER': os.getenv('DATABASE_USER', 'django_user'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'root'),
-        'HOST': os.getenv('DATABASE_HOST', 'localhost'),
-        'PORT': os.getenv('DATABASE_PORT', '3306'),
+        'NAME': 'TAG_DB',
+        'USER': 'TAG_USER_DB',
+        'HOST': 'TAG_HOST',
+        'PASSWORD': 'root',
+        'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
+        # 'OPTIONS': {
+        #          "init_command": "SET foreign_key_checks = 0;",
+        #     },
     }
 }
 
