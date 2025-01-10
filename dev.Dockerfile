@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-COPY entrypoint.sh /app/entrypoint.sh
+COPY . /app
+
 RUN chmod +x /app/entrypoint.sh
 
 EXPOSE 8050
