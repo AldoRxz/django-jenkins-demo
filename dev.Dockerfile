@@ -21,5 +21,6 @@ RUN chmod +x /app/entrypoint.sh
 EXPOSE 8050
 
 ENTRYPOINT ["/app/entrypoint.sh"]
-# CMD ["uvicorn", "django_settings.asgi:app", "--reload", "--host", "0.0.0.0", "--port", "8050"]
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8050"]
+
+CMD ["gunicorn", "-c", "gunicorn_config.py", "django_settings.wsgi:application"]
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8050"]

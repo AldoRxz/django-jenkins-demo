@@ -83,30 +83,18 @@ WSGI_APPLICATION = 'django_settings.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'django_jenkins',
-#         'USER': 'root',
-#         'HOST': '127.0.0.1',
-#         'PASSWORD': 'root',
-#         'PORT': '3306',
-#         'OPTIONS': {'charset': 'utf8mb4'},
-#     }
-# }
 
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'django_jenkins',
-#         'USER': 'django_user',
-#         'HOST': 'localhost',
-#         'PASSWORD': 'root',
-#         'PORT': '3306',
-#         'OPTIONS': {'charset': 'utf8mb4'},
-#    }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_jenkins',
+        'USER': 'django_user',
+        'HOST': 'localhost',
+        'PASSWORD': 'root',
+        'PORT': '3306',
+        'OPTIONS': {'charset': 'utf8mb4'},
+   }
+}
 
 # DATABASES = {
 #     'default': {
@@ -119,21 +107,6 @@ WSGI_APPLICATION = 'django_settings.wsgi.application'
 #         'OPTIONS': {'charset': 'utf8mb4'},
 #     }
 # }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'TAG_DB',
-        'USER': 'TAG_USER_DB',
-        'HOST': 'TAG_HOST',
-        'PASSWORD': 'root',
-        'PORT': '3306',
-        'OPTIONS': {'charset': 'utf8mb4'},
-        # 'OPTIONS': {
-        #          "init_command": "SET foreign_key_checks = 0;",
-        #     },
-    }
-}
 
 
 # Password validation
