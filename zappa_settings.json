@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "django_settings": "django_settings.settings_dev",
+        "app_function": "django_settings.wsgi.application",
+        "exclude": [
+            "dateutil",
+            "concurrent"
+        ],
+        "profile_name": "default",
+        "project_name": "django-jenkins",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-keski-test"
+    }
+}
